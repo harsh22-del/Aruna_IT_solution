@@ -1,0 +1,11 @@
+/* Component utilities */
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+@media (max-width:1024px){.grid-3,.grid-4{grid-template-columns:repeat(2,1fr)}.grid-2{grid-template-columns:1fr}}
+@media (max-width:680px){.grid-3,.grid-4{grid-template-columns:1fr}}
+
+.tag{display:inline-block;padding:5px 10px;border-radius:999px;background:rgba(255,204,0,.12);color:var(--c-gold);font-size:11px;letter-spacing:.16em;text-transform:uppercase;border:1px solid rgba(255,204,0,.25)}
+.divider{height:1px;background:linear-gradient(90deg,transparent,var(--glass-brd),transparent);margin:60px 0}
+.center{text-align:center}
+.muted{color:#a9a4cf}

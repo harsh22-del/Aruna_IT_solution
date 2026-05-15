@@ -1,0 +1,12 @@
+/* Extra keyframes */
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes glow{0%,100%{filter:drop-shadow(0 0 8px rgba(177,59,255,.5))}50%{filter:drop-shadow(0 0 22px rgba(255,204,0,.6))}}
+.glow{animation:glow 4s ease-in-out infinite}
+.spin-slow{animation:spin 18s linear infinite}
+.float{animation:floatY 5s ease-in-out infinite}
+
+/* particles */
+.particles{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.particles i{position:absolute;width:3px;height:3px;border-radius:50%;background:var(--c-gold);opacity:.6;animation:rise linear infinite}
+@keyframes rise{from{transform:translateY(20vh);opacity:0}10%{opacity:.7}to{transform:translateY(-110vh);opacity:0}}
